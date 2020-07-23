@@ -1,6 +1,6 @@
-.downloads-archive
+.downloads-archive, .download-single
   .download-wrap
-    border: solid 0.5px #000000
+    border: solid 0.5px #bfbdbd
     flex-direction: row
     &:not(:first-child)
       margin-top: 15px
@@ -8,13 +8,35 @@
       justify-content: flex-start
     .download-img
       width: auto
+      min-width: 300px
+      align-self: center
+      padding-left: 15px
       img
-        width: auto
+        width: 100%
         height: auto
     .download-content
       border: none
       .download-content-wrap
-        .download-text
-          font-size: 15px
-          line-height: 1.13
+
+.download-preview
+  padding-bottom: 30px
+  img
+    width: 100%
+.download-single
+  .download-wrap
+    border: none
+    .download-content
+      padding: 0
+      .download-title
+        h3
+         font-size: 20px
+         padding-bottom: 15px
+    .download-controls
+      margin-top: 30px
+      a
+        width: 153px
+        height: 44px
+        &:not(:first-child)
+          width: 60px
+
 

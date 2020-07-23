@@ -1,0 +1,63 @@
+.content, .sidebar
+ .section-header
+  .section-title
+    text-align: left
+    margin-bottom: 30px
+
+.points-tasks
+  padding: 30px
+  .points-task
+    padding-bottom: 30px
+    margin-bottom: 20px
+    &:not(:last-child)
+     border-bottom: 1px solid #cdcdcd
+    .points-task--title
+      font-size: 20px
+      color: $main_blue_color
+      font-weight: 500
+      text-align: left
+      line-height: 1.25
+    .points-task--description      
+      color: #5d6e7c
+     
+    .points-task--link
+      padding: 7px 43px
+      display: flex
+      flex-direction: column
+      align-items: center
+      align-self: flex-start
+      width: fit-content
+      font-weight: 500
+
+.leaderboard-archive
+  margin-bottom: 30px
+  .leaderboard-items
+    margin-bottom: 30px
+    .leaderboard-item:first-child
+      border-top: 1px solid #e6e6e6
+
+  .leaderboard-header
+    background-color: transparent
+    padding-left: 0
+    padding-right: 0
+    .leaderboard-header--text
+      color: #5d6e7c
+      line-height: 1.13
+
+.load-more-wrap
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-bottom: 30px
+    &:before,&:after
+      content: ""
+      width: 100%
+      height: 2px
+      max-width: 50%
+      flex: 1
+      background-color: $main_blue_color
+    .lined-btn
+      width: 110px
+      padding: 10px 0!important
+      &.disabled
+        background-color: #04365d

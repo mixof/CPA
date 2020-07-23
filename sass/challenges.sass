@@ -1,0 +1,177 @@
+.challenges-archive
+  .challenge-item
+    margin-bottom: 30px
+    position: relative
+    .challenge-wrap
+      position: relative
+      margin-bottom: 30px
+      width: 100%
+      height: 452px
+      display: flex
+      justify-content: center
+      .challenge-content
+        position: relative
+        z-index: 99
+        display: flex
+        flex-direction: column
+        justify-content: center
+        .challenge-title
+          font-size: 35px
+          color: white
+          font-weight: bold
+          line-height: 1.23
+          text-transform: uppercase
+        .challenge-date
+          color: $main_blue_color
+          background-color: white
+          padding: 20px 20px
+          text-align: center
+          font-size: 35px
+          color: #00225a
+          font-weight: bold
+          line-height: 1.23
+      .challenge-bg
+        width: 100%
+        position: absolute
+        top: 0
+        left: 0
+        max-width: 765px
+        max-height: 452px
+        object-fit: cover
+/************----------- COMPLETED Challenges----------------------********************/
+.completed-challenges, .challenge-single-sec, .preview-response
+  background-color: #f7f9fc
+  padding: 90px 0
+  .load-more-wrap
+    margin-top: 50px
+    a
+      width: 150px
+  .completed-challenge
+    border: 1px solid #707070
+    height: 100%
+    margin-bottom: 30px
+    .completed-challenge-wrap
+      display: flex
+      flex-direction: column
+      height: 100%
+      position: relative
+      .chalenge-header
+        position: relative
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        .img-link
+          width: 100%
+          figure
+            width: 100%
+            height: 100%
+            background: black
+            &:hover img
+              opacity: .6
+        a.play-btn
+          text-decoration: none
+          position: absolute
+          &:hover
+            i
+              transform: scale(1.3)
+          i
+           transition: all 0.2s ease-in
+           width: 80px
+           height: 80px
+
+        img
+          width: 100%
+          height: 264px
+          object-fit: cover
+          -webkit-transition: .3s ease-in-out
+          transition: .3s ease-in-out
+      .challenge-content
+        padding: 25px 15px
+        flex-direction: column
+        display: flex
+        flex-grow: 2
+        justify-content: space-between
+        a
+         text-decoration: none
+         .challenge-title
+          color: $main_blue_color
+          font-size: 18px
+          text-transform: uppercase
+        .challenge-description
+          flex-grow: 2
+          font-size: 15px
+          color: #5d6e7c
+          line-height: 1.13
+
+      .challenge-footer
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+
+        .author, .date
+         font-size: 15px
+         font-weight: 500
+         line-height: 1.2
+         color: black
+         margin-bottom: 8px
+        .hashtag, .time
+         font-size: 15px
+         color: #5d6e7c
+         line-height: 1.13
+
+
+/***********************---------------- CHALLENGE SINGLE SECTION----------------------**********************/
+.challenge-single-sec
+  margin-top: 0
+  margin-bottom: 0
+  .container
+    display: flex
+    justify-content: center
+  .challenge-single-wrap
+    max-width: 588px
+    background-color: white
+    padding: 80px 100px
+    .share-challenge
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      .challenge-share-links
+        display: flex
+        flex-direction: row
+        margin-top: 20px
+        a
+          width: 57px
+          height: 57px
+          background-color: $main_blue_color
+          border-radius: 50%
+          display: flex
+          align-items: center
+          justify-content: center
+          transition: all 0.2s ease-in
+          &:not(:first-child)
+            margin-left: 12px
+          &:hover
+            background-color: #04365d
+      h3
+        color: $main_blue_color
+    .section-header
+      .section-title
+        border: none
+        padding-bottom: 0
+        margin-bottom: 30px
+    .completed-challenge
+      height: auto
+      .completed-challenge-wrap
+        height: auto
+
+
+.preview-response
+  width: 290px
+  margin-top: 40px
+  background-color: transparent
+  padding: 0
+  .challenge-single-wrap
+    padding: 0
+
